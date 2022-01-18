@@ -2,7 +2,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 
 const app = express()
-const port = process.env.port
+const port = process.env.port || 80
 
 // Static Files
 app.use(express.static('public'))
